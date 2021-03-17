@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imgBackArrowToolbarEdit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Post"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtPostDescriptionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:hint="post description"
+                android:minHeight="100dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnUpdatePost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_round_blue"
+                android:text="update post"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
